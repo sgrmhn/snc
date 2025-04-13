@@ -61,7 +61,7 @@ footer {
 }
 
 /* Background image for section headings */
-section h2 {
+section head {
   background-image: url("snc_main.jpg");
   background-size: cover;
   background-position: center;
