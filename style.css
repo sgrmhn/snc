@@ -64,11 +64,11 @@ nav a:hover {
 
 /* Hero Section */
 .hero {
-  background-image: url("images/hero-bg.jpg");
+  background-image: url("snc_main.jpg");
   background-size: cover;
   background-position: center;
   padding: 80px 20px;
-  color: white;
+  color: blue;
   text-align: center;
 }
 
