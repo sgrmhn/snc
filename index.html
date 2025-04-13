@@ -2,59 +2,87 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Shoalhaven Nepalese Community</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shoalhaven Nepalese Community (SNC)</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <!-- Header with logo and nav -->
   <header>
-  <div class="logo-container">
-    <img src="snclogo.png" alt="SNC Logo" class="logo" width="25%" />
-    <h1>Shoalhaven Nepalese Community</h1>
-  </div>
-    <nav>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#events">Events</a></li>
-        <li><a href="#blogs">Blogs</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+    <div class="container">
+      <div class="logo-nav">
+        <img src="images/snc-logo.png" alt="SNC Logo" class="logo" />
+        <h1>Shoalhaven Nepalese Community</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#events">Events</a></li>
+          <li><a href="#blogs">Blog</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <section id="about">
-    <h2>About Us</h2>
-    <p>Welcome to the official site of the Shoalhaven Nepalese Community. We celebrate our culture and connect our people through events and shared experiences.</p>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-text">
+      <h2>Welcome to the Shoalhaven Nepalese Community</h2>
+      <p>Celebrating culture, unity, and tradition</p>
+    </div>
   </section>
 
-  <section id="events">
-    <h2>Upcoming Events</h2>
-    <ul>
-      <li><strong>New Year Celebration</strong> - May 1, 2025 at Shoalhaven Hall</li>
-      <li><strong>Community Picnic</strong> - June 15, 2025 at Huskisson Beach</li>
-    </ul>
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>The Shoalhaven Nepalese Community is dedicated to preserving and promoting Nepalese culture, values, and heritage in the Shoalhaven region. We organize cultural events, social gatherings, and community support initiatives to bring people together.</p>
+    </div>
   </section>
 
-  <section id="blogs">
-    <h2>Event Blogs</h2>
-    <article>
-      <h3>Dashain Festival 2024</h3>
-      <p>We celebrated Dashain with vibrant performances, traditional food, and a beautiful sense of togetherness. It was great day of days.</p>
-    </article>
-    <article>
-      <h3>Tihar Night 2024</h3>
-      <p>Our community lit up the night with music, dance, and cultural displays that showcased our heritage proudly.</p>
-    </article>
+  <!-- Events Section -->
+  <section id="events" class="section">
+    <div class="container">
+      <h2>Upcoming Events</h2>
+      <div class="events-grid">
+        <a href="dashain-2024.html">
+          <img src="images/dashain.jpg" alt="Dashain 2024" />
+          <p>Dashain Festival 2024</p>
+        </a>
+        <a href="tihar-2024.html">
+          <img src="images/tihar.jpg" alt="Tihar 2024" />
+          <p>Tihar Celebration 2024</p>
+        </a>
+      </div>
+    </div>
   </section>
 
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <p>Email: shoalhavennepalese@gmail.com</p>
-    <p>Facebook: <a href="#">facebook.com/shoalhavennepalese</a></p>
+  <!-- Blog Section -->
+  <section id="blogs" class="section">
+    <div class="container">
+      <h2>Event Blog Highlights</h2>
+      <article class="blog-post">
+        <h3>Dashain Festival 2023</h3>
+        <p>We celebrated Dashain 2023 with joy, dance, and a taste of home. Read more about the day filled with tradition and unity...</p>
+        <a href="dashain-2023.html">Read More</a>
+      </article>
+    </div>
   </section>
 
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <p>Email: <a href="mailto:info@snc.org.au">info@snc.org.au</a></p>
+    </div>
+  </section>
+
+  <!-- Footer -->
   <footer>
-    <p>&copy; 2025 Shoalhaven Nepalese Community. All rights reserved.</p>
+    <div class="container">
+      <p>&copy; 2025 Shoalhaven Nepalese Community. All rights reserved.</p>
+    </div>
   </footer>
 </body>
 </html>
