@@ -47,3 +47,25 @@ footer {
   background: #333;
   color: #fff;
 }
+/* Logo styling */
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.logo {
+  height: 50px;
+  width: auto;
+}
+
+/* Background image for section headings */
+section h2 {
+  background-image: url("snc_main.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 15px;
+  border-radius: 8px;
+}
