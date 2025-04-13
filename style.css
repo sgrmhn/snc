@@ -1,58 +1,38 @@
-body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
+/* Reset some default styles */
+* {
   margin: 0;
   padding: 0;
-  background: #f9f9f9;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
   color: #333;
+  background-color: #f9f9f9;
 }
 
-header {
-  background: #a83232;
-  color: #fff;
-  padding: 20px 0;
-  text-align: center;
-}
-
-nav ul {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  margin-top: 10px;
-}
-
-nav ul li {
-  margin: 0 15px;
-}
-
-nav ul li a {
-  color: #fff;
-  text-decoration: none;
-}
-
-section {
-  padding: 20px;
-  max-width: 800px;
+.container {
+  width: 90%;
+  max-width: 1100px;
   margin: auto;
+  padding: 20px 0;
 }
 
-section h2 {
-  color: #a83232;
+/* Header & Logo */
+header {
+  background-color: #ffffff;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
-footer {
-  text-align: center;
-  padding: 10px;
-  background: #333;
-  color: #fff;
-}
-/* Logo styling */
-.logo-container {
+.logo-nav {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 10px;
+  gap: 15px;
 }
 
 .logo {
@@ -60,12 +40,142 @@ footer {
   width: auto;
 }
 
-/* Background image for section headings */
-section head {
-  background-image: url("snc_main.jpg");
+header h1 {
+  font-size: 24px;
+  color: #004b8d;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #004b8d;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #007bff;
+}
+
+/* Hero Section */
+.hero {
+  background-image: url("images/hero-bg.jpg");
   background-size: cover;
   background-position: center;
+  padding: 80px 20px;
   color: white;
-  padding: 15px;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 18px;
+}
+
+/* Section Styling */
+.section {
+  padding: 60px 0;
+}
+
+.section h2 {
+  font-size: 28px;
+  color: #004b8d;
+  margin-bottom: 20px;
+}
+
+/* Events Grid */
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.events-grid a {
+  text-align: center;
+  text-decoration: none;
+  color: #333;
+  border: 1px solid #ddd;
   border-radius: 8px;
+  overflow: hidden;
+  background-color: #fff;
+  transition: transform 0.2s;
+}
+
+.events-grid a:hover {
+  transform: scale(1.02);
+}
+
+.events-grid img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.events-grid p {
+  padding: 10px;
+  font-weight: bold;
+}
+
+/* Blog Post */
+.blog-post {
+  background-color: #fff;
+  padding: 20px;
+  border-left: 4px solid #004b8d;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.blog-post h3 {
+  color: #004b8d;
+  margin-bottom: 10px;
+}
+
+.blog-post a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+/* Contact Section */
+#contact a {
+  color: #004b8d;
+}
+
+/* Footer */
+footer {
+  background-color: #004b8d;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+}
+
+/* Responsive Nav & Layout */
+@media (max-width: 768px) {
+  .logo-nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  header h1 {
+    font-size: 20px;
+  }
+
+  .hero h2 {
+    font-size: 28px;
+  }
 }
